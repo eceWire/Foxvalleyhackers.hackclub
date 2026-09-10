@@ -77,16 +77,8 @@
       flex: 0 0 auto;
     }
     .logo-mark img { display: block; width: 100%; height: 100%; object-fit: cover; }
-    .logo-name {
-      font: 700 14px/1.05 var(--mono);
-      letter-spacing: -.04em;
-    }
-    .nav-links {
-      margin-left: auto;
-      display: flex;
-      align-items: center;
-      gap: 28px;
-    }
+    .logo-name { font: 700 14px/1.05 var(--mono); letter-spacing: -.04em; }
+    .nav-links { margin-left: auto; display: flex; align-items: center; gap: 28px; }
     .nav-links a, .nav-cta, .button {
       font: 700 11px var(--mono);
       letter-spacing: .06em;
@@ -143,9 +135,7 @@
       content: "";
       position: absolute;
       inset: 0;
-      background-image:
-        linear-gradient(rgba(23,24,39,.08) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(23,24,39,.08) 1px, transparent 1px);
+      background-image: linear-gradient(rgba(23,24,39,.08) 1px, transparent 1px), linear-gradient(90deg, rgba(23,24,39,.08) 1px, transparent 1px);
       background-size: 42px 42px;
       mask-image: linear-gradient(to bottom, black, transparent 85%);
     }
@@ -254,7 +244,17 @@
     .event p { margin: 0; color: #d1ced0; font-size: 13px; }
     .event-tag { padding: 7px 9px; color: #d1ced0; border: 1px solid rgba(242,236,223,.3); font: 700 10px var(--mono); text-transform: uppercase; }
     .project-grid { display: grid; grid-template-columns: 1.35fr .65fr; gap: 16px; }
-    .project { min-height: 260px; padding: 25px; display: flex; flex-direction: column; justify-content: space-between; position: relative; overflow: hidden; background: var(--card); border: 1px solid var(--line); }
+    .project {
+      min-height: 260px;
+      padding: 25px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+      overflow: hidden;
+      background: var(--card);
+      border: 1px solid var(--line);
+    }
     .project:nth-child(2) { min-height: 360px; background: var(--yellow); }
     .project:nth-child(3) { min-height: 290px; background: var(--blue); }
     .project:nth-child(4) { min-height: 290px; color: var(--paper); background: var(--ink-soft); }
@@ -279,7 +279,20 @@
       .shell, .nav-inner, .hero-grid { width: min(100% - 28px, 620px); }
       .logo-link { margin-left: 150px; padding-inline: 4px; }
       .hack-club-banner { left: 4px; width: min(145px, 36vw); }
-      .nav-links { display: none; position: absolute; top: 74px; left: 0; right: 0; padding: 20px 14px; flex-direction: column; align-items: stretch; gap: 0; background: var(--paper); border-bottom: 1px solid var(--line); box-shadow: 6px 6px 0 var(--ink); }
+      .nav-links {
+        display: none;
+        position: absolute;
+        top: 74px;
+        left: 0;
+        right: 0;
+        padding: 20px 14px;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        background: var(--paper);
+        border-bottom: 1px solid var(--line);
+        box-shadow: 6px 6px 0 var(--ink);
+      }
       .nav-links.open { display: flex; }
       .nav-links a, .nav-cta { padding: 13px 0; }
       .nav-cta { text-align: center; }
@@ -304,14 +317,11 @@
 </head>
 <body id="top">
   <a class="hack-club-banner" href="https://hackclub.com/" target="_blank" rel="noreferrer" aria-label="Visit Hack Club">
-    <svg viewBox="0 0 260 115" role="img" aria-label="Hack Club 2026">
-      <path d="M0 7C45 0 83 1 126 11c40 9 84 7 134-2v65c-49 11-92 12-133 1C83 65 43 63 0 71Z" fill="#ec3750" stroke="#171827" stroke-width="4"/>
-      <text x="15" y="40" fill="#fff" font-family="Arial, sans-serif" font-size="25" font-weight="900" transform="rotate(-3 15 40)">HACK CLUB</text>
-      <path d="M107 68c39 10 83 11 137 1v32c-50 12-95 10-137-1Z" fill="#ec3750" stroke="#171827" stroke-width="4"/>
-      <text x="142" y="91" fill="#fff" font-family="Arial, sans-serif" font-size="25" font-weight="900" transform="rotate(5 142 91)">2026</text>
+    <svg viewBox="0 0 132.851 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M128.535 22.0163C129.588 12.8718 122.259 5.03541 113.067 5.03541H9.98801C4.47196 5.03541 0 9.50737 0 15.0234V84.9766C0 90.4926 4.47196 94.9646 9.98801 94.9646H113.067C122.259 94.9646 129.588 87.1282 128.535 77.9837L122.213 23.0163C121.751 19.002 121.751 14.998 122.213 10.9837L128.535 22.0163Z" fill="#EC3750"/>
+      <path d="M28.0001 32H36.0001V44H48.0001V32H56.0001V68H48.0001V54H36.0001V68H28.0001V32ZM62.5801 54.36L69.8201 32H78.1801L85.4201 54.36L86.8201 32H94.0001V68H86.8201V45.64L79.5801 68H71.4201L64.1801 45.64V68H57.0001V32H62.5801L62.5801 54.36Z" fill="white"/>
     </svg>
   </a>
-
   <header class="top-nav">
     <div class="nav-inner">
       <a class="logo-link" href="#top" aria-label="Fox Valley Hackers home">
@@ -329,7 +339,6 @@
       </nav>
     </div>
   </header>
-
   <main>
     <section class="hero">
       <div class="hero-grid">
@@ -348,9 +357,7 @@
         </aside>
       </div>
     </section>
-
     <div class="marquee" aria-hidden="true"><div class="marquee-track"><span>BUILD LOUDLY • SHARE EARLY • KEEP IT LOCAL • MAKE ROOM&nbsp;&nbsp;</span><span>BUILD LOUDLY • SHARE EARLY • KEEP IT LOCAL • MAKE ROOM&nbsp;&nbsp;</span></div></div>
-
     <section id="why" class="section shell">
       <div class="manifesto">
         <div>
@@ -367,7 +374,6 @@
         <div class="spark-wrap"><div class="spark">MAKE<br>WITH<br>HACK CLUB</div></div>
       </div>
     </section>
-
     <section id="hackclub" class="section hackclub-section">
       <div class="shell hackclub-grid">
         <div>
@@ -384,7 +390,6 @@
         </div>
       </div>
     </section>
-
     <section id="events" class="section events">
       <div class="shell">
         <div class="section-head"><div><div class="eyebrow">03 / What’s happening</div><h2 class="section-title">Come make a mess.</h2></div><p class="section-intro">Bring an idea, a question, or a friend. Finished is optional.</p></div>
@@ -395,7 +400,6 @@
         </div>
       </div>
     </section>
-
     <section id="projects" class="section shell">
       <div class="section-head"><div><div class="eyebrow">04 / Your turn</div><h2 class="section-title">Things you could make</h2></div><p class="section-intro">Pick a direction, find a teammate, and start.</p></div>
       <div class="project-grid">
@@ -405,7 +409,6 @@
         <article class="project"><div class="project-meta"><span>04 / Your idea</span><span>Open call</span></div><div><h3>Start with a question.</h3><p>Bring a messy idea. We’ll bring encouragement, snacks, and a spare charger.</p></div></article>
       </div>
     </section>
-
     <section id="questions" class="section questions">
       <div class="shell">
         <div class="section-head"><div><div class="eyebrow">05 / Questions</div><h2 class="section-title">You belong here.</h2></div><p class="section-intro">Still unsure? That is a perfectly good place to start.</p></div>
@@ -416,7 +419,6 @@
         </div>
       </div>
     </section>
-
     <section id="join" class="section join shell">
       <div class="join-box">
         <div><div class="eyebrow">06 / The open door</div><h2>Come for the <span>build.</span><br>Stay for the people.</h2><p>Want to join a hackathon, start a leadership project, or ask a question? Text or email us. No experience needed.</p></div>
@@ -424,9 +426,7 @@
       </div>
     </section>
   </main>
-
   <footer class="footer"><div class="shell footer-inner"><span>Fox Valley Hackers / Aurora, IL / Est. 2026</span><span><a href="sms:3312694605">SMS 331-269-4605</a> / <a href="mailto:ecewire@gmail.com">ecewire@gmail.com</a></span><span>@foxvalleyhackers</span></div></footer>
-
   <script>
     const menuButton = document.querySelector('.menu-toggle');
     const nav = document.querySelector('.nav-links');
