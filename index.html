@@ -111,18 +111,6 @@
       font-size: 22px;
       cursor: pointer;
     }
-    .hack-club-banner {
-      position: absolute;
-      z-index: 30;
-      top: 0;
-      left: 10px;
-      width: min(208px, 18vw);
-      display: block;
-      line-height: 0;
-      transition: transform .2s;
-    }
-    .hack-club-banner:hover { transform: translateY(3px); }
-    .hack-club-banner svg { width: 100%; height: auto; }
     .hero {
       position: relative;
       min-height: calc(100vh - 74px);
@@ -278,7 +266,6 @@
     @media (max-width: 820px) {
       .shell, .nav-inner, .hero-grid { width: min(100% - 28px, 620px); }
       .logo-link { margin-left: 150px; padding-inline: 4px; }
-      .hack-club-banner { left: 4px; width: min(145px, 36vw); }
       .nav-links {
         display: none;
         position: absolute;
@@ -316,12 +303,7 @@
   </style>
 </head>
 <body id="top">
-  <a class="hack-club-banner" href="https://hackclub.com/" target="_blank" rel="noreferrer" aria-label="Visit Hack Club">
-    <svg viewBox="0 0 132.851 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M128.535 22.0163C129.588 12.8718 122.259 5.03541 113.067 5.03541H9.98801C4.47196 5.03541 0 9.50737 0 15.0234V84.9766C0 90.4926 4.47196 94.9646 9.98801 94.9646H113.067C122.259 94.9646 129.588 87.1282 128.535 77.9837L122.213 23.0163C121.751 19.002 121.751 14.998 122.213 10.9837L128.535 22.0163Z" fill="#EC3750"/>
-      <path d="M28.0001 32H36.0001V44H48.0001V32H56.0001V68H48.0001V54H36.0001V68H28.0001V32ZM62.5801 54.36L69.8201 32H78.1801L85.4201 54.36L86.8201 32H94.0001V68H86.8201V45.64L79.5801 68H71.4201L64.1801 45.64V68H57.0001V32H62.5801L62.5801 54.36Z" fill="white"/>
-    </svg>
-  </a>
+  <a href="https://hackclub.com/"><img style="position: absolute; top: 0; left: 10px; border: 0; width: 256px; z-index: 999;" src="https://assets.hackclub.com/banners/2026.svg" alt="Hack Club"/></a>
   <header class="top-nav">
     <div class="nav-inner">
       <a class="logo-link" href="#top" aria-label="Fox Valley Hackers home">
