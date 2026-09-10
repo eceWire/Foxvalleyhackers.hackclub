@@ -9,6 +9,7 @@
   <meta property="og:description" content="Build cool things. Lead the way. No experience required.">
   <meta property="og:type" content="website">
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&family=Syne:wght@500;600;700;800&display=swap');
     :root {
       --red: #ec3750;
       --blue: #0077ff;
@@ -20,8 +21,8 @@
       --yellow: #f6cc56;
       --muted: #5c5d6c;
       --line: rgba(23, 24, 39, .18);
-      --display: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-      --mono: "Courier New", Courier, monospace;
+      --display: "Syne", Arial, sans-serif;
+      --mono: "Space Mono", "Courier New", Courier, monospace;
     }
     * { box-sizing: border-box; }
     html { scroll-behavior: smooth; }
@@ -29,7 +30,7 @@
       margin: 0;
       color: var(--ink);
       background: var(--paper);
-      font-family: Arial, Helvetica, sans-serif;
+      font-family: "DM Sans", Arial, Helvetica, sans-serif;
       overflow-x: hidden;
     }
     [id] { scroll-margin-top: 92px; }
@@ -57,7 +58,7 @@
       display: flex;
       align-items: center;
       gap: 11px;
-      margin-left: clamp(150px, 18vw, 220px);
+      margin-left: clamp(220px, 22vw, 260px);
       padding: 4px 9px;
       background: var(--paper);
       color: var(--ink);
@@ -67,15 +68,15 @@
     .logo-mark {
       width: 40px;
       height: 40px;
-      display: grid;
-      place-items: center;
+      display: block;
+      overflow: hidden;
       background: var(--ink);
       border-radius: 11px;
       transform: rotate(-6deg);
       box-shadow: 4px 4px 0 var(--blue);
       flex: 0 0 auto;
     }
-    .logo-mark svg { width: 36px; height: 36px; }
+    .logo-mark img { display: block; width: 100%; height: 100%; object-fit: cover; }
     .logo-name {
       font: 700 14px/1.05 var(--mono);
       letter-spacing: -.04em;
@@ -314,19 +315,7 @@
   <header class="top-nav">
     <div class="nav-inner">
       <a class="logo-link" href="#top" aria-label="Fox Valley Hackers home">
-        <span class="logo-mark">
-          <svg viewBox="0 0 120 120" fill="none" aria-hidden="true">
-            <path d="M27 48C21 40 17 31 18 20C29 21 39 27 46 37C37 38 31 42 27 48Z" fill="#EC3750"/>
-            <path d="M93 48C99 40 103 31 102 20C91 21 81 27 74 37C83 38 89 42 93 48Z" fill="#EC3750"/>
-            <path d="M32 40C35 26 46 14 60 13C74 14 85 26 88 40L84 68C80 83 71 96 60 103C49 96 40 83 36 68L32 40Z" fill="#F6CC56" stroke="#171827" stroke-width="4"/>
-            <path d="M39 43C44 29 51 23 60 22C69 23 76 29 81 43L78 65C75 77 68 87 60 93C52 87 45 77 42 65L39 43Z" fill="#0077FF"/>
-            <path d="M44 48C50 39 55 35 60 35C65 35 70 39 76 48L72 68C68 76 64 81 60 84C56 81 52 76 48 68L44 48Z" fill="#171827"/>
-            <path d="M49 55L55 50L60 58L65 50L71 55L68 71L60 78L52 71L49 55Z" fill="#EC3750"/>
-            <circle cx="46" cy="65" r="3" fill="#171827"/>
-            <circle cx="74" cy="65" r="3" fill="#171827"/>
-            <path d="M55 92H65" stroke="#EC3750" stroke-width="3" stroke-linecap="round"/>
-          </svg>
-        </span>
+        <span class="logo-mark"><img src="fox-valley-hackers-og-logo.png" alt="Fox Valley Hackers crest"></span>
         <span class="logo-name">FOX VALLEY<br>HACKERS</span>
       </a>
       <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">☰</button>
@@ -389,7 +378,7 @@
         </div>
         <div class="hackclub-card">
           <div class="hackclub-card-top"><span>For teens</span><span>13–18 / 2026</span></div>
-          <div class="hackclub-card-mark"><span class="logo-mark"><svg viewBox="0 0 120 120" fill="none" aria-hidden="true"><path d="M27 48C21 40 17 31 18 20C29 21 39 27 46 37C37 38 31 42 27 48Z" fill="#EC3750"/><path d="M93 48C99 40 103 31 102 20C91 21 81 27 74 37C83 38 89 42 93 48Z" fill="#EC3750"/><path d="M32 40C35 26 46 14 60 13C74 14 85 26 88 40L84 68C80 83 71 96 60 103C49 96 40 83 36 68L32 40Z" fill="#F6CC56" stroke="#171827" stroke-width="4"/><path d="M39 43C44 29 51 23 60 22C69 23 76 29 81 43L78 65C75 77 68 87 60 93C52 87 45 77 42 65L39 43Z" fill="#0077FF"/><path d="M44 48C50 39 55 35 60 35C65 35 70 39 76 48L72 68C68 76 64 81 60 84C56 81 52 76 48 68L44 48Z" fill="#171827"/><path d="M49 55L55 50L60 58L65 50L71 55L68 71L60 78L52 71L49 55Z" fill="#EC3750"/></svg></span></div>
+          <div class="hackclub-card-mark"><span class="logo-mark"><img src="fox-valley-hackers-og-logo.png" alt="Fox Valley Hackers crest"></span></div>
           <h3>Make cool things.<br><span>Find your people.</span></h3>
           <p>No credentials needed. Start with a hackathon, a club idea, or a half-finished project.</p>
         </div>
